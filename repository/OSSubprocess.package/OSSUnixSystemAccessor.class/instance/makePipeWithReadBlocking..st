@@ -1,29 +1,30 @@
 pipes
 makePipeWithReadBlocking: aBoolean
-	"Originally, we created the pipes ourselves and the answer was an array of file descriptors.
-	This was complicated because we have to then create our own sqFile structure and deal
-	with with offsets and their sizeof(). 
-	
-	So now we use OSProcess primitive primCreatePipe which directly answers an array of sqFile structs
-	specifially created for them. This way we avoid all the sqFile creation and management at image side. 	
-	"
-
-" ==================== OLD CODe =======================
-	| pipePointer returnValue fileDescriptors |
+	"Creates a pipe in the underlying OS and answers an instance of a OSSPipe"
+	| pipePointer returnValue fileDescriptors pipe fileIDsArray fileDescriptor1 fileDescriptor2 |
 	pipePointer := ExternalAddress allocate: 8.
 	[
+		"We created the pipes ourselves and the answer is an array of file descriptors."
 		returnValue := self primitivePipe: pipePointer.	
 		(returnValue = -1) ifTrue: [ self perror: 'pipe()' ]. 
-		fileDescriptors := Array new: 2.
-		fileDescriptors at: 1 put: (pipePointer nbUInt32AtOffset: 0).
-		fileDescriptors at: 2 put: (pipePointer nbUInt32AtOffset: 4).
-		^ OSSPipe newWith: fileDescriptors readBlocking: aBoolean. 
+		fileIDsArray := Array new: 2.
+		fileDescriptor1 := pipePointer nbUInt32AtOffset: 0.
+		fileDescriptor2 := pipePointer nbUInt32AtOffset: 4.
+		"We then have to create our own sqFile structures as that is what OSSAttachableFileStream name:attachTo:writable: expects. For that we use the primitiveFileOpenUseFileDescriptor:writeFlag:"
+		fileIDsArray at: 1 put: (self primitiveFileOpenUseFileDescriptor: fileDescriptor1 writeFlag: false).
+		fileIDsArray at: 2 put: (self primitiveFileOpenUseFileDescriptor: fileDescriptor2 writeFlag: true).
+		pipe := OSSPipe newWith: fileIDsArray readBlocking: aBoolean. 
 	] ensure:[
 		pipePointer free.
-	]
- ==================== OLD CODe =======================
+	].
+	^ pipe
+ 
 "
-
-	| fileIDsArray |
+===================== OLD CODE  ====================
+We use OSProcess primitive primCreatePipe which directly answers an array of sqFile structs
+	specifially created for them. This way we avoid all the sqFile creation and management at image side. 	
+| fileIDsArray |
 	fileIDsArray := self primCreatePipe.
 	^ OSSPipe newWith: fileIDsArray readBlocking: aBoolean. 
+===================== OLD CODE  ====================	
+"
