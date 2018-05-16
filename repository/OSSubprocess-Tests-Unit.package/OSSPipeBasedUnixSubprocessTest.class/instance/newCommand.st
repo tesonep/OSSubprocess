@@ -1,7 +1,7 @@
 helper
 newCommand
 	
-	^ self commandClass new
+	^ super newCommand
 			"For pipes, we can use a pipe for both reading or writing"
 			defaultReadStreamCreationBlock: [self systemAccessor makeBlockingPipe];
 			defaultWriteStreamCreationBlock: [self systemAccessor makeNonBlockingPipe];

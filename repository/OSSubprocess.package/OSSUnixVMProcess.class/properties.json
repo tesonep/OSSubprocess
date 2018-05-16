@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "MarianoMartinezPeck 1/11/2016 13:16",
+	"super" : "OSSVMProcess",
+	"category" : "OSSubprocess-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"accessProtect",
+		"sigChldSemaphore",
+		"childWatcher"
+	],
+	"name" : "OSSUnixVMProcess",
+	"type" : "normal"
+}

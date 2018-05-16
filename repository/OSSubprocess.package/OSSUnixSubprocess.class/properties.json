@@ -1,26 +1,21 @@
 {
 	"commentStamp" : "MarianoMartinezPeck 5/30/2016 11:25",
-	"super" : "Object",
-	"category" : "OSSubprocess",
+	"super" : "OSSSubprocess",
+	"category" : "OSSubprocess-Base",
 	"classinstvars" : [ ],
 	"pools" : [
 		"LibCSignalSharedPool"
 	],
 	"classvars" : [ ],
 	"instvars" : [
-		"command",
-		"arguments",
 		"pointers",
 		"posixSpawnFileActionsT",
-		"exitStatus",
-		"envVariables",
 		"stderrStream",
 		"stdinStream",
 		"stdoutStream",
 		"createMissingStandardStreams",
 		"defaultWriteStreamCreationBlock",
 		"defaultReadStreamCreationBlock",
-		"pid",
 		"retrievedStdout",
 		"retrievedStderr",
 		"mutexForSigchld",

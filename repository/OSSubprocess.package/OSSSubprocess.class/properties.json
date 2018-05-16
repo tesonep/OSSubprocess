@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "OSSubprocess-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"command",
+		"arguments",
+		"pid",
+		"exitStatus",
+		"envVariables"
+	],
+	"name" : "OSSSubprocess",
+	"type" : "normal"
+}

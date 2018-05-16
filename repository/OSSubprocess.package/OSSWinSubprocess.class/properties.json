@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "OSSSubprocess",
+	"category" : "OSSubprocess-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "OSSWinSubprocess",
+	"type" : "normal"
+}

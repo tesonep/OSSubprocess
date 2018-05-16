@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "OSSAbstractUnixSubprocessTest",
+	"super" : "OSSAbstractSubprocessTest",
 	"category" : "OSSubprocess-Tests-Stress",
 	"classinstvars" : [ ],
 	"pools" : [ ],

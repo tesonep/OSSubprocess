@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "MarianoMartinezPeck 1/10/2016 23:31",
 	"super" : "StandardFileStream",
-	"category" : "OSSubprocess",
+	"category" : "OSSubprocess-Base",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

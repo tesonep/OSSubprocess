@@ -1,22 +1,19 @@
 {
-	"commentStamp" : "MarianoMartinezPeck 1/11/2016 13:16",
+	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "OSSubprocess",
+	"category" : "OSSubprocess-Base",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [
 		"VMProcess"
 	],
 	"instvars" : [
-		"accessProtect",
-		"childProcessList",
 		"systemAccessor",
 		"pid",
-		"childListTreshold",
 		"sessionID",
 		"mutexForCwd",
-		"sigChldSemaphore",
-		"childWatcher"
+		"childProcessList",
+		"childListTreshold"
 	],
 	"name" : "OSSVMProcess",
 	"type" : "normal"

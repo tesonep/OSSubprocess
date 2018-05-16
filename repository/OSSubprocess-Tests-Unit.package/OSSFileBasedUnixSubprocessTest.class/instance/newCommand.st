@@ -1,7 +1,7 @@
 helpers
 newCommand
 	| command |
-	command := self commandClass new.
+	command := super newCommand.
 	command defaultReadStreamCreationBlock: [ OSSUnixSubprocess createTempFileToBeUsedAsReadStreamOn: '/tmp' ].
 	command defaultWriteStreamCreationBlock: [ OSSUnixSubprocess createTempFileToBeUsedAsWriteStreamOn: '/tmp' ].
 	^ command 

@@ -1,0 +1,15 @@
+{
+	"classtraitcomposition" : "TWinErrorChecker classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "OSSWinSystemAccessor",
+	"commentStamp" : "",
+	"super" : "OSSAbstractSystemAccessor",
+	"traitcomposition" : "TWinErrorChecker",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [
+		"Win32Types"
+	],
+	"category" : "OSSubprocess-Base"
+}

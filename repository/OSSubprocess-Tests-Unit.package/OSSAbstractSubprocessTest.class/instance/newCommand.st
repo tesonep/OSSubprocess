@@ -1,4 +1,4 @@
 instance creation
 newCommand
 	
-	^ self commandClass new
+	^ OSSSubprocess newForPlatform

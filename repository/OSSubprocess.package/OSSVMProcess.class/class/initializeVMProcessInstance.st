@@ -1,6 +1,6 @@
 initialize - release
 initializeVMProcessInstance
 	VMProcess isNil 
-		ifTrue: [ VMProcess := self basicNew. ]
+		ifTrue: [ VMProcess := OSPlatform current vmProcessClass basicNew. ]
 		ifFalse: [ VMProcess finalizePreviousSession ].
 	VMProcess initialize.

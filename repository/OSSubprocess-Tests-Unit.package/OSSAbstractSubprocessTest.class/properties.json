@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "OSSAbstractUnixSubprocessTest",
+	"name" : "OSSAbstractSubprocessTest",
 	"type" : "normal"
 }

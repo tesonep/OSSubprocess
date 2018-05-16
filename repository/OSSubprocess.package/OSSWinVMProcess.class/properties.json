@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "OSSVMProcess",
+	"category" : "OSSubprocess-Base",
+	"classinstvars" : [ ],
+	"pools" : [
+		"Win32Types"
+	],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "OSSWinVMProcess",
+	"type" : "normal"
+}

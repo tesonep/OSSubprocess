@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "MarianoMartinezPeck 1/10/2016 23:35",
 	"super" : "FFIExternalObject",
-	"category" : "OSSubprocess",
+	"category" : "OSSubprocess-Base",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
