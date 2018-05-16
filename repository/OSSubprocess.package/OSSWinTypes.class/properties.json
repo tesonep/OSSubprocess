@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "OSSVMProcess",
-	"category" : "OSSubprocess-Base",
+	"super" : "SharedPool",
+	"category" : "OSSubprocess-Win-Objects",
 	"classinstvars" : [ ],
 	"pools" : [
-		"OSSWinTypes"
+		"Win32Types"
 	],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "OSSWinVMProcess",
+	"name" : "OSSWinTypes",
 	"type" : "normal"
 }

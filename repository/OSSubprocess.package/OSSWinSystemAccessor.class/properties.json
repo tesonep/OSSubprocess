@@ -9,7 +9,7 @@
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [
-		"Win32Types"
+		"OSSWinTypes"
 	],
 	"category" : "OSSubprocess-Base"
 }
