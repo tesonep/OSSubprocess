@@ -8,4 +8,6 @@ printOn: aStream
 		nextPutAll: command asString;
 		nextPutAll: '; Status: ';
 		nextPutAll: self exitStatus asString;
+		nextPutAll: '; Complete: ';
+		nextPutAll: self isComplete asString;
 		nextPut: $)

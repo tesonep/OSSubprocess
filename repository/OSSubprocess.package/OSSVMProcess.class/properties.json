@@ -13,7 +13,9 @@
 		"sessionID",
 		"mutexForCwd",
 		"childProcessList",
-		"childListTreshold"
+		"childListTreshold",
+		"accessProtect",
+		"childWatcher"
 	],
 	"name" : "OSSVMProcess",
 	"type" : "normal"

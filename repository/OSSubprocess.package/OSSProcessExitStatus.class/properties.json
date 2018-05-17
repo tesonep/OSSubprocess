@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "OSSubprocess-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"intValue"
+	],
+	"name" : "OSSProcessExitStatus",
+	"type" : "normal"
+}

@@ -3,6 +3,8 @@ initialize
 	super initialize.
 	
 	mutexForCwd := Semaphore forMutualExclusion.
+	accessProtect := Semaphore forMutualExclusion.
+
 	systemAccessor := OSPlatform current systemAccessor. 
 	pid := systemAccessor getPid.
 
@@ -10,3 +12,4 @@ initialize
 	childListTreshold := 20. "Once child list gets bigger than this number, we delete all exited processes"	
 	
 	self initializeSessionID.
+	self initializeChildWatcher.

@@ -1,10 +1,9 @@
-tests
+tests - child status
 testGetChildPid
 	| command | 
 	
 	command := self newCommand 
-					command: 'timeout';
-					arguments: {'2'}.
+					command: 'ipconfig'.
 	
 	command run.
 	self assert: command pid > 0.

@@ -4,5 +4,4 @@ pruneExitedChildrenAfter: size
 	them if they are no longer active."
 
 	(accessProtect critical: [childProcessList allButFirst: size])
-		do: [ :aProcess |
-			aProcess isComplete ifTrue: [ self unregisterChildProcess: aProcess ]]
+		do: [ :aProcess | aProcess isComplete ifTrue: [ self unregisterChildProcess: aProcess ]]

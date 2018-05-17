@@ -6,9 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"accessProtect",
-		"sigChldSemaphore",
-		"childWatcher"
+		"sigChldSemaphore"
 	],
 	"name" : "OSSUnixVMProcess",
 	"type" : "normal"

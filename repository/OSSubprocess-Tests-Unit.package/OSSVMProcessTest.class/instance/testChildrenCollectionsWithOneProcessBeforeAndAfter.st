@@ -3,7 +3,7 @@ testChildrenCollectionsWithOneProcessBeforeAndAfter
 	| command | 
 	OSSVMProcess vmProcess initializeAllMyChildren. 
 	command := self newCommand 
-		command: '/bin/sleep';
+		command: self sleepCommand;
 		arguments: {'2'}.
 	
 	command run. 

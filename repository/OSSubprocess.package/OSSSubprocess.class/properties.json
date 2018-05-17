@@ -9,8 +9,8 @@
 		"command",
 		"arguments",
 		"pid",
-		"exitStatus",
-		"envVariables"
+		"envVariables",
+		"mutexForSigchld"
 	],
 	"name" : "OSSSubprocess",
 	"type" : "normal"

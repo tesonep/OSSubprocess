@@ -6,9 +6,8 @@ updateActiveChildrenAndNotifyDead
 	It will also notify the dead child so that particular actions can be taken."
 
 	self activeChildren do:
-		[:child | child queryExitStatus ifNotNil: [ 
-				"#activeChildren answers those whose exitStatus is not nil. 
-				Tehrefore if now queryExitStatus answers notNil, then this is the child that die!!!"
-				child processHasExitNotification.
-			 ]
+		[:child | child queryExitStatus.
+				child isComplete ifTrue: [ 
+					child processHasExitNotification.
+				 ]
 		 ]

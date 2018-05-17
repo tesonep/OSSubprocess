@@ -8,6 +8,7 @@
 	],
 	"classvars" : [ ],
 	"instvars" : [
+		"exitStatus",
 		"pointers",
 		"posixSpawnFileActionsT",
 		"stderrStream",
@@ -18,7 +19,6 @@
 		"defaultReadStreamCreationBlock",
 		"retrievedStdout",
 		"retrievedStderr",
-		"mutexForSigchld",
 		"shouldContinueWaiting",
 		"terminateOnShutdown",
 		"workingDirectory"

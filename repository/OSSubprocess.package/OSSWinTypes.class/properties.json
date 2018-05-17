@@ -6,7 +6,11 @@
 	"pools" : [
 		"Win32Types"
 	],
-	"classvars" : [ ],
+	"classvars" : [
+		"LPPROCESS_INFORMATION",
+		"LPSECURITY_ATTRIBUTES",
+		"LPSTARTUPINFO"
+	],
 	"instvars" : [ ],
 	"name" : "OSSWinTypes",
 	"type" : "normal"

@@ -1,4 +1,4 @@
-child watching
+initialize - release
 initializeChildWatcher
 	"This is a process which waits for the death of a child processes. Use SIGCHLD events rather than a Delay to poll."
 

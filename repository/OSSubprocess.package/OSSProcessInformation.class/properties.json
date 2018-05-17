@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "FFIExternalStructure",
+	"category" : "OSSubprocess-Win-Objects",
+	"classinstvars" : [ ],
+	"pools" : [
+		"OSSWinTypes"
+	],
+	"classvars" : [
+		"OFFSET_DWPROCESSID",
+		"OFFSET_DWTHREADID",
+		"OFFSET_HPROCESS",
+		"OFFSET_HTHREAD"
+	],
+	"instvars" : [ ],
+	"name" : "OSSProcessInformation",
+	"type" : "normal"
+}

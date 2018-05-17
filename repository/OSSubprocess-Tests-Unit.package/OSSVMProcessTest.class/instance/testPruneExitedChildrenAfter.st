@@ -3,7 +3,7 @@ testPruneExitedChildrenAfter
 	| command | 
 	OSSVMProcess vmProcess initializeAllMyChildren. 
 	command := self newCommand 
-		command: '/bin/ls'.
+		command: self lsCommand.
 	command runAndWait. 
 	
 	self assert: OSSVMProcess vmProcess exitedChildren size equals: 1.

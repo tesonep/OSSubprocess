@@ -1,11 +1,19 @@
 {
+	"classtraitcomposition" : "TWinErrorChecker classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"processInfo",
+		"exitCode",
+		"shareStdHandlers"
+	],
+	"name" : "OSSWinSubprocess",
 	"commentStamp" : "",
 	"super" : "OSSSubprocess",
-	"category" : "OSSubprocess-Base",
+	"traitcomposition" : "TWinErrorChecker",
+	"type" : "normal",
 	"classinstvars" : [ ],
-	"pools" : [ ],
-	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "OSSWinSubprocess",
-	"type" : "normal"
+	"pools" : [
+		"OSSWinTypes"
+	],
+	"category" : "OSSubprocess-Base"
 }

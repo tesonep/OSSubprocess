@@ -1,13 +1,11 @@
 {
 	"commentStamp" : "MarianoMartinezPeck 1/11/2016 11:50",
-	"super" : "Object",
+	"super" : "OSSProcessExitStatus",
 	"category" : "OSSubprocess-Base",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"intValue"
-	],
+	"instvars" : [ ],
 	"name" : "OSSUnixProcessExitStatus",
 	"type" : "normal"
 }
